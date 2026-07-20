@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nettocart — Global Enterprises</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">N</span>
+      <span class="logo-text">Nettocart <em>Global Enterprises</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#categories">Categories</a>
+      <a href="#products">Shop</a>
+      <a href="#route">Sourcing</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-panel" id="searchPanel">
+    <input type="text" id="searchInput" placeholder="Search the catalog — try 'lamp' or 'ceramic'" autocomplete="off">
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Manifest No. NG-2601 · 14 origin ports</p>
+    <h1>One cart.<br>Every port of origin.</h1>
+    <p class="hero-sub">Nettocart Global Enterprises sources directly from independent makers and verified wholesalers across 14 countries, and lands it on your doorstep without the markup of a middle warehouse.</p>
+    <div class="hero-actions">
+      <a href="#products" class="btn btn-primary">Browse the catalog</a>
+      <a href="#route" class="btn btn-ghost">See where it ships from</a>
+    </div>
+  </div>
+
+  <!-- Signature element: the trade route line -->
+  <div class="route-strip" id="route">
+    <svg class="route-line" viewBox="0 0 1000 80" preserveAspectRatio="none" aria-hidden="true">
+      <path id="routePath" d="M0,40 C150,10 250,70 400,40 C550,10 650,70 800,40 C900,20 950,55 1000,40" />
+    </svg>
+    <div class="route-stops">
+      <div class="stop"><span class="dot"></span><span class="stop-label">Coimbatore<br><small>Textiles</small></span></div>
+      <div class="stop"><span class="dot"></span><span class="stop-label">Porto<br><small>Ceramics</small></span></div>
+      <div class="stop"><span class="dot"></span><span class="stop-label">Chiang Mai<br><small>Teak &amp; wood</small></span></div>
+      <div class="stop"><span class="dot"></span><span class="stop-label">Nairobi<br><small>Woven goods</small></span></div>
+      <div class="stop"><span class="dot"></span><span class="stop-label">Oaxaca<br><small>Metalwork</small></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORY STRIP ============ -->
+<section class="categories" id="categories">
+  <button class="cat-chip active" data-filter="all">All goods</button>
+  <button class="cat-chip" data-filter="home">Home &amp; living</button>
+  <button class="cat-chip" data-filter="kitchen">Kitchen</button>
+  <button class="cat-chip" data-filter="textile">Textiles</button>
+  <button class="cat-chip" data-filter="lighting">Lighting</button>
+</section>
+
+<!-- ============ PRODUCT GRID ============ -->
+<section class="product-section" id="products">
+  <div class="section-head">
+    <h2>Currently in the hold</h2>
+    <p id="resultCount">8 items</p>
+  </div>
+  <div class="product-grid" id="productGrid">
+    <!-- Populated dynamically by script.js -->
+  </div>
+</section>
+
+<!-- ============ ABOUT / TRUST STRIP ============ -->
+<section class="about-strip" id="about">
+  <div class="about-item">
+    <span class="about-num">14</span>
+    <span class="about-label">Origin countries sourced directly</span>
+  </div>
+  <div class="about-item">
+    <span class="about-num">0%</span>
+    <span class="about-label">Warehouse markup — maker to cart</span>
+  </div>
+  <div class="about-item">
+    <span class="about-num">48h</span>
+    <span class="about-label">Average dispatch after order</span>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">N</span>
+      <span>Nettocart Global Enterprises</span>
+    </div>
+    <p class="footer-note">Demo storefront — product data, pricing, and checkout are placeholders for development.</p>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h3>Your cart</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">Your cart is empty — go pick something off the shelf.</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <span id="cartTotal">$0.00</span>
+    </div>
+    <button class="btn btn-primary btn-full" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
